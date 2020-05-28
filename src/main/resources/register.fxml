@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="1000.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.Controller">
+<BorderPane fx:id="borderPane" prefHeight="1000.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.Controller">
    <center>
       <VBox alignment="CENTER" style="-fx-background-color: #202020;" styleClass="root" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
@@ -51,7 +51,7 @@
                   <Image url="@FullIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closebutton" accessibleRole="BUTTON" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@CloseIcon.png" />
                </image>

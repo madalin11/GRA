@@ -1,8 +1,11 @@
 package rep.PP;
 
+import animatefx.animation.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import sun.security.ec.point.AffinePoint;
 import sun.security.util.math.ImmutableIntegerModuloP;
@@ -12,6 +15,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
+    @FXML
+    private ImageView closebutton;
+
+    @FXML
+    private BorderPane borderPane;
 
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -22,6 +30,7 @@ public class Controller implements Initializable {
     void close(javafx.scene.input.MouseEvent event) {
         Stage stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
         stage.close();
+
     }
 
     @FXML
@@ -29,10 +38,14 @@ public class Controller implements Initializable {
         Stage stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
 
         if(stage.isMaximized()) {
+
             stage.setMaximized(false);
+            new FadeInUp(borderPane).play();
         }
         else {
+
             stage.setMaximized(true);
+            new Pulse(borderPane).play();
         }
     }
 
@@ -40,6 +53,7 @@ public class Controller implements Initializable {
     void MIN(javafx.scene.input.MouseEvent event) {
         Stage stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
         stage.setIconified(true);
+
 
     }
 
