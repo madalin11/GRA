@@ -15,7 +15,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("MainScene.fxml"));
         primaryStage.setTitle("G.R.A");
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);

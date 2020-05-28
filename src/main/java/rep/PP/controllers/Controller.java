@@ -1,4 +1,4 @@
-package rep.PP;
+package rep.PP.controllers;
 
 import animatefx.animation.*;
 import javafx.fxml.FXML;
@@ -7,10 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import sun.security.ec.point.AffinePoint;
-import sun.security.util.math.ImmutableIntegerModuloP;
 
-import java.awt.event.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
