@@ -1,7 +1,9 @@
 package rep.PP;
 
 import animatefx.animation.FadeIn;
+import animatefx.animation.FadeInUp;
 import animatefx.animation.Jello;
+import animatefx.animation.Pulse;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,7 +24,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
-        new Jello(root).play();
+        new FadeInUp(root).play();
     }
 
 
