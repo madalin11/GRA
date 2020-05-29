@@ -20,7 +20,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
-        new FadeIn(root).play();
+
     }
 
 
