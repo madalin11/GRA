@@ -25,7 +25,7 @@ import java.util.ResourceBundle;
 public class ControllerMainScene implements Initializable {
 
     @FXML
-    private StackPane rootPane;
+    private AnchorPane rootPane;
 
     @FXML
     private ImageView closebutton;
@@ -50,10 +50,11 @@ public class ControllerMainScene implements Initializable {
 
     @FXML
     private Button termsAndConditionsbutton;
+    @FXML
+    private VBox rootPaneVbox;
 
     @FXML
     private StackPane termsAndCond;
-
 
     public void initialize(URL location, ResourceBundle resources) {
     setRotate(c1,true,180,10);
@@ -96,7 +97,12 @@ public class ControllerMainScene implements Initializable {
             new Pulse(borderPane).play();
         }
     }
-
+    @FXML
+    void loadMainScene(ActionEvent event) throws IOException {
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("BackScene.fxml"));
+        rootPane.getChildren().setAll(vbox);
+        new FadeIn(vbox).play();
+    }
     @FXML
     void MIN(javafx.scene.input.MouseEvent event) {
         Stage stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
