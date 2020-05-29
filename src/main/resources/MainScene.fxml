@@ -19,11 +19,11 @@
 
 <BorderPane fx:id="borderPane" prefHeight="1000.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerMainScene">
    <center>
-      <VBox alignment="CENTER" style="-fx-background-color: #202020;" styleClass="root" stylesheets="@style.css" BorderPane.alignment="CENTER">
+      <VBox fx:id="rootPaneVbox" alignment="CENTER" style="-fx-background-color: #202020;" styleClass="root" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
-            <StackPane fx:id="rootPane" VBox.vgrow="ALWAYS">
+            <StackPane VBox.vgrow="ALWAYS">
                <children>
-                  <AnchorPane cache="true" cacheHint="QUALITY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="980.0" prefWidth="1400.0" styleClass="back">
+                  <AnchorPane fx:id="rootPane" cache="true" cacheHint="QUALITY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="980.0" prefWidth="1400.0" styleClass="back">
                      <children>
                         <VBox alignment="CENTER" layoutX="1101.0" layoutY="917.0">
                            <children>
@@ -79,7 +79,7 @@
                <children>
                   <HBox alignment="CENTER">
                      <children>
-                        <StackPane prefHeight="229.0" prefWidth="338.0">
+                        <StackPane prefHeight="385.0" prefWidth="338.0">
                            <children>
                               <Circle fx:id="c1" fill="#202020" radius="100.0" stroke="#1e97bc" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 165;">
                                  <StackPane.margin>
@@ -102,7 +102,7 @@
                   </HBox>
                   <VBox prefHeight="363.0" prefWidth="338.0">
                      <children>
-                        <Button fx:id="carsListButton1" mnemonicParsing="false" onAction="#loadCarsList" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Home">
+                        <Button mnemonicParsing="false" onAction="#loadMainScene" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Home">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

@@ -1,17 +1,13 @@
 package rep.PP;
 
 import animatefx.animation.FadeIn;
-import animatefx.animation.FadeInUp;
-import animatefx.animation.Jello;
-import animatefx.animation.Pulse;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.scene.paint.Color;
-import java.awt.*;
 
 public class Main extends Application {
 
@@ -24,7 +20,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
-        new FadeInUp(root).play();
+        new FadeIn(root).play();
     }
 
 
