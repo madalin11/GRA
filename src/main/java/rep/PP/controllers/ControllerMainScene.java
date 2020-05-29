@@ -126,11 +126,13 @@ public class ControllerMainScene implements Initializable {
     void loadCarsList(ActionEvent event) throws IOException {
         VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("CarsListScene.fxml"));
         rootPane.getChildren().setAll(vbox);
+        new FadeIn(vbox).play();
 
     }
     @FXML
     void setTermsScene(ActionEvent event) throws IOException {
         VBox vbox1  = FXMLLoader.load(getClass().getClassLoader().getResource("TermsScene.fxml"));
         rootPane.getChildren().setAll(vbox1);
+        new FadeIn(vbox1).play();
     }
 }
