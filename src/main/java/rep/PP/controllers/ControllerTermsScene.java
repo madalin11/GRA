@@ -9,9 +9,6 @@ import java.util.ResourceBundle;
 
 public class ControllerTermsScene implements Initializable {
 
-    @FXML
-    private HBox termsScene;
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
