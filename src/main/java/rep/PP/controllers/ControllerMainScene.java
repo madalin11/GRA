@@ -2,19 +2,31 @@ package rep.PP.controllers;
 
 import animatefx.animation.*;
 import javafx.animation.RotateTransition;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class ControllerMainScene implements Initializable {
+
+    @FXML
+    private StackPane rootPane;
+
     @FXML
     private ImageView closebutton;
 
@@ -29,6 +41,19 @@ public class Controller implements Initializable {
 
     @FXML
     private Circle c3;
+
+    @FXML
+    private Button carsListButton;
+
+    @FXML
+    private Button logInButton;
+
+    @FXML
+    private Button termsAndConditionsbutton;
+
+    @FXML
+    private StackPane termsAndCond;
+
 
     public void initialize(URL location, ResourceBundle resources) {
     setRotate(c1,true,180,10);
@@ -95,5 +120,17 @@ public class Controller implements Initializable {
 
          x=  mouseEvent.getSceneX();
          y=mouseEvent.getSceneY();
+    }
+
+    @FXML
+    void loadCarsList(ActionEvent event) throws IOException {
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("CarsListScene.fxml"));
+        rootPane.getChildren().setAll(vbox);
+
+    }
+    @FXML
+    void setTermsScene(ActionEvent event) throws IOException {
+        VBox vbox1  = FXMLLoader.load(getClass().getClassLoader().getResource("TermsScene.fxml"));
+        rootPane.getChildren().setAll(vbox1);
     }
 }
