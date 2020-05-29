@@ -100,8 +100,29 @@
                         </StackPane>
                      </children>
                   </HBox>
-                  <VBox prefHeight="346.0" prefWidth="338.0">
+                  <VBox prefHeight="363.0" prefWidth="338.0">
                      <children>
+                        <Button fx:id="carsListButton1" mnemonicParsing="false" onAction="#loadCarsList" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Home">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                           </VBox.margin>
+                        </Button>
                         <Button fx:id="carsListButton" mnemonicParsing="false" onAction="#loadCarsList" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Cars List">
                            <cursor>
                               <Cursor fx:constant="HAND" />
