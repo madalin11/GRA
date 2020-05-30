@@ -6,3 +6,7 @@
     -fx-background-size: cover;
 
 }
+.back1{
+    -fx-background-image: url('FirstImage.png');
+    -fx-background-size:cover;
+}

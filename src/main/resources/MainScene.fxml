@@ -25,7 +25,7 @@
                <children>
                   <AnchorPane fx:id="rootPane" cache="true" cacheHint="QUALITY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="980.0" prefWidth="1400.0" styleClass="back">
                      <children>
-                        <VBox alignment="CENTER" layoutX="1101.0" layoutY="917.0">
+                        <VBox fx:id="vboxAllRights" alignment="CENTER" layoutX="1101.0" layoutY="917.0">
                            <children>
                               <Text fill="#5b5353" strokeType="OUTSIDE" strokeWidth="0.0" text="All rights reserved" textAlignment="CENTER" wrappingWidth="293.13671875">
                                  <font>
@@ -34,7 +34,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox layoutX="259.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;">
+                        <VBox fx:id="vboxTitleGra" layoutX="259.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;">
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="G.R.A" textAlignment="CENTER" wrappingWidth="883.0">
                                  <font>
@@ -77,7 +77,7 @@
          <children>
             <VBox prefHeight="1029.0" prefWidth="338.0" style="-fx-background-color: #202020;">
                <children>
-                  <HBox alignment="CENTER">
+                  <HBox fx:id="hboxAnimat" alignment="CENTER">
                      <children>
                         <StackPane prefHeight="385.0" prefWidth="338.0">
                            <children>
@@ -100,7 +100,7 @@
                         </StackPane>
                      </children>
                   </HBox>
-                  <VBox prefHeight="363.0" prefWidth="338.0">
+                  <VBox fx:id="vboxButtons" prefHeight="363.0" prefWidth="338.0">
                      <children>
                         <Button mnemonicParsing="false" onAction="#loadMainScene" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Home">
                            <cursor>
@@ -193,7 +193,7 @@
                         <StackPane fx:id="termsAndCond" />
                      </children>
                   </VBox>
-                  <VBox alignment="BOTTOM_LEFT" prefHeight="405.0" prefWidth="338.0">
+                  <VBox fx:id="vboxButtonClose" alignment="BOTTOM_LEFT" prefHeight="405.0" prefWidth="338.0">
                      <children>
                         <Button fx:id="closeButton" mnemonicParsing="false" onMouseClicked="#close" prefHeight="35.0" prefWidth="232.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Close">
                            <cursor>

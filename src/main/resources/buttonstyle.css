@@ -14,3 +14,7 @@
 .bevel-grey:pressed {
     -fx-background-color: #798880;
 }
+.backsecond{
+    -fx-background-image: url('FirstImage.png');
+    -fx-background-size:cover;
+}
