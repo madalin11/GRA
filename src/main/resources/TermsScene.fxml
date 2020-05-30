@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="1000.0" prefWidth="1400.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerTermsScene">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="999.0" prefWidth="1380.0" style="-fx-background-color: #202020; -fx-border-width: 2px 0px 2px 2px; -fx-border-color: white;">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Terms and conditions" textAlignment="CENTER" wrappingWidth="1378.0">
+                     <font>
+                        <Font name="Arial Black" size="67.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="0.86" specularConstant="0.56" specularExponent="24.19" surfaceScale="1.27">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox>
+               <children>
+                  <Text fill="#6f5e5e" lineSpacing="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Introduction" wrappingWidth="1000.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Lighting specularExponent="40.0" surfaceScale="3.94">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Welcome to Gestiune Reprezentanta Auto (“Company”, “we”, “our”, “us”)!" wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      These Terms of Service (“Terms”, “Terms of Service”) govern your use of our website located at repauto.atlasian.net (together or individually “Service”) operated by Gestiune Reprezentanta Auto." wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Your agreement with us includes these Terms and our Privacy Policy (“Agreements”). You acknowledge that you have read and understood Agreements, and agree to be bound of them." wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at repauto.suport@gmail.com so we can try to find a solution. These Terms apply to all visitors, users and others who wish to access or use Service." wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#6f5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Refunds" wrappingWidth="1000.0">
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <Lighting specularExponent="40.0" surfaceScale="3.94">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      We issue refunds for Contracts within 30 days of the original purchase of the Contract." wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#6f5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Copyright Policy" wrappingWidth="1000.0">
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <Lighting specularExponent="40.0" surfaceScale="3.94">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on Service infringes on the copyright or other intellectual property rights (“Infringement”) of any person or entity." wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      You may be held accountable for damages (including costs and attorneys’ fees) for misrepresentation or bad-faith claims on the infringement of any Content found on and/or through Service on your copyright." wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#6f5e5e" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Contact Us">
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <Lighting specularExponent="40.0" surfaceScale="3.94">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="#0d0d0d" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Please send your feedback, comments, requests for technical support by email: repauto.suport@gmail.com." wrappingWidth="1200.0">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Narrow" size="23.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="336.0" prefWidth="1378.0">
+                     <children>
+                        <Text lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These Terms and Conditions were created for repauto.atlasian.net by PolicyMaker.io on 2020-05-11.">
+                           <font>
+                              <Font name="Bodoni MT" size="21.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant color="#17b52d" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5333333333333333" startY="0.3476190476190476">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Text>
+                     </children>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.73">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#460000" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

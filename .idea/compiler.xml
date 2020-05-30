@@ -9,5 +9,8 @@
         <module name="Project_FIS20-PP" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Project_FIS20-PP" target="6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

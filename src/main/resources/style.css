@@ -1,0 +1,12 @@
+.back{
+-fx-background-image: url('FirstImage.png');
+-fx-background-size:cover;
+}
+.root{
+    -fx-background-size: cover;
+
+}
+.back1{
+    -fx-background-image: url('FirstImage.png');
+    -fx-background-size:cover;
+}
