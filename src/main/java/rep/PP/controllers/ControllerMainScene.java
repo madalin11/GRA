@@ -127,6 +127,7 @@ public class ControllerMainScene implements Initializable {
         new Jello(vboxButtonClose).play();
         new FadeInUpBig(vboxButtons).play();
         new FadeInLeft(vboxTitleGra).play();
+        new Jello(hboxAnimat).play();
     }
     @FXML
     void MIN(javafx.scene.input.MouseEvent event) {
