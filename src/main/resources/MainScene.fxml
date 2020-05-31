@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderPane" prefHeight="1000.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerMainScene">
+<BorderPane fx:id="borderPane" prefHeight="1018.0" prefWidth="1738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerMainScene">
    <center>
       <VBox fx:id="rootPaneVbox" alignment="CENTER" style="-fx-background-color: #202020;" styleClass="root" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
@@ -36,32 +36,12 @@
                         </VBox>
                         <VBox fx:id="vboxTitleGra" layoutX="259.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="G.R.A" textAlignment="CENTER" wrappingWidth="883.0">
+                              <Text fx:id="graTit" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="G R A" textAlignment="CENTER" wrappingWidth="883.0">
                                  <font>
-                                    <Font name="System Bold Italic" size="96.0" />
+                                    <Font name="Product Sans" size="96.0" />
                                  </font>
-                                 <effect>
-                                    <Lighting diffuseConstant="0.65" specularConstant="1.35" specularExponent="28.84" surfaceScale="1.03">
-                                       <bumpInput>
-                                          <Shadow />
-                                       </bumpInput>
-                                       <light>
-                                          <Light.Distant color="#ebdede" />
-                                       </light>
-                                    </Lighting>
-                                 </effect>
                               </Text>
                            </children>
-                           <effect>
-                              <Lighting specularConstant="2.0">
-                                 <bumpInput>
-                                    <Shadow />
-                                 </bumpInput>
-                                 <light>
-                                    <Light.Distant />
-                                 </light>
-                              </Lighting>
-                           </effect>
                         </VBox>
                      </children>
                      <StackPane.margin>
@@ -79,7 +59,7 @@
                <children>
                   <HBox fx:id="hboxAnimat" alignment="CENTER">
                      <children>
-                        <StackPane prefHeight="385.0" prefWidth="338.0">
+                        <StackPane fx:id="animat" prefHeight="385.0" prefWidth="338.0">
                            <children>
                               <Circle fx:id="c1" fill="#202020" radius="100.0" stroke="#1e97bc" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 165;">
                                  <StackPane.margin>
@@ -100,9 +80,9 @@
                         </StackPane>
                      </children>
                   </HBox>
-                  <VBox fx:id="vboxButtons" prefHeight="363.0" prefWidth="338.0">
+                  <VBox prefHeight="462.0" prefWidth="338.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#loadMainScene" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Home">
+                        <Button fx:id="b1" mnemonicParsing="false" onAction="#loadMainScene" prefHeight="60.0" prefWidth="371.0" style="-fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px 2px 2px 2px;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Home">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -120,10 +100,10 @@
                               <Font name="Arial Black" size="18.0" />
                            </font>
                            <VBox.margin>
-                              <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                              <Insets bottom="10.0" left="50.0" right="50.0" top="20.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="carsListButton" mnemonicParsing="false" onAction="#loadCarsList" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Cars List">
+                        <Button fx:id="b2" mnemonicParsing="false" onAction="#loadCarsList" prefHeight="60.0" prefWidth="371.0" style="-fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px 2px 2px 2px;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Cars List">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -138,34 +118,13 @@
                               </Lighting>
                            </effect>
                            <VBox.margin>
-                              <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Arial Black" size="18.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="logInButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="371.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Log In" textAlignment="CENTER">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <effect>
-                              <Lighting>
-                                 <bumpInput>
-                                    <Shadow />
-                                 </bumpInput>
-                                 <light>
-                                    <Light.Distant />
-                                 </light>
-                              </Lighting>
-                           </effect>
-                           <VBox.margin>
-                              <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                              <Insets bottom="10.0" left="50.0" right="50.0" top="20.0" />
                            </VBox.margin>
                            <font>
                               <Font name="Arial Black" size="18.0" />
                            </font>
                         </Button>
-                        <Button fx:id="termsAndConditionsbutton" mnemonicParsing="false" onAction="#setTermsScene" prefHeight="39.0" prefWidth="338.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Terms and conditions">
+                        <Button fx:id="b3" mnemonicParsing="false" prefHeight="60.0" prefWidth="371.0" style="-fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px 2px 2px 2px;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Log In" textAlignment="CENTER">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -180,7 +139,28 @@
                               </Lighting>
                            </effect>
                            <VBox.margin>
-                              <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                              <Insets bottom="10.0" left="50.0" right="50.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="b4" mnemonicParsing="false" onAction="#setTermsScene" prefHeight="60.0" prefWidth="338.0" style="-fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px 2px 2px 2px;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Terms and conditions">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="50.0" right="50.0" top="20.0" />
                            </VBox.margin>
                            <font>
                               <Font name="Arial Black" size="18.0" />
@@ -193,9 +173,9 @@
                         <StackPane fx:id="termsAndCond" />
                      </children>
                   </VBox>
-                  <VBox fx:id="vboxButtonClose" alignment="BOTTOM_LEFT" prefHeight="405.0" prefWidth="338.0">
+                  <VBox fx:id="vboxButtonClose" alignment="BOTTOM_LEFT" prefHeight="261.0" prefWidth="338.0">
                      <children>
-                        <Button fx:id="closeButton" mnemonicParsing="false" onMouseClicked="#close" prefHeight="35.0" prefWidth="232.0" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Close">
+                        <Button fx:id="b5" mnemonicParsing="false" onMouseClicked="#close" prefHeight="27.0" prefWidth="232.0" style="-fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px 2px 2px 2px;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Close">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -223,54 +203,37 @@
          </children>
       </StackPane>
    </left>
-   <effect>
-      <Lighting diffuseConstant="1.51">
-         <bumpInput>
-            <Shadow height="138.0" radius="39.19" width="20.76" />
-         </bumpInput>
-         <light>
-            <Light.Distant />
-         </light>
-      </Lighting>
-   </effect>
    <top>
-      <HBox alignment="CENTER_RIGHT" onMouseDragged="#dragged" onMousePressed="#pressed" style="-fx-background-color: #a16209;">
+      <HBox alignment="CENTER_RIGHT" onMouseDragged="#dragged" onMousePressed="#pressed" style="-fx-background-color: #363737;">
          <children>
-            <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#MIN" pickOnBounds="true" preserveRatio="true">
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-               <image>
-                  <Image url="@MinimizeIcon.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#MAX" pickOnBounds="true" preserveRatio="true">
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-               <image>
-                  <Image url="@FullIcon.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="closebutton" accessibleRole="BUTTON" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@CloseIcon.png" />
-               </image>
-               <HBox.margin>
-                  <Insets left="10.0" right="10.0" />
-               </HBox.margin>
-            </ImageView>
+            <Button mnemonicParsing="false" onMouseClicked="#MIN" styleClass="bevel-grey" stylesheets="@buttonstyle.css">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@MinimizeIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#MAX" styleClass="bevel-grey" stylesheets="@buttonstyle.css">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@FullIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#close" styleClass="bevel-grey" stylesheets="@buttonstyle.css">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@CloseIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
-         <effect>
-            <Lighting diffuseConstant="1.51" specularConstant="0.32">
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
-            </Lighting>
-         </effect>
       </HBox>
    </top>
 </BorderPane>
