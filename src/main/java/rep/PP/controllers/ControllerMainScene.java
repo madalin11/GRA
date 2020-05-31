@@ -35,8 +35,9 @@ public class ControllerMainScene implements Initializable {
     @FXML
     private VBox vboxTitleGra;
 
+
     @FXML
-    private HBox hboxAnimat;
+    private StackPane animat;
 
     @FXML
     private Circle c1;
@@ -48,28 +49,22 @@ public class ControllerMainScene implements Initializable {
     private Circle c3;
 
     @FXML
-    private VBox vboxButtons;
+    private Button b1;
 
     @FXML
-    private Button carsListButton;
+    private Button b2;
 
     @FXML
-    private Button logInButton;
+    private Button b3;
 
     @FXML
-    private Button termsAndConditionsbutton;
+    private Button b4;
 
     @FXML
     private StackPane termsAndCond;
 
     @FXML
-    private VBox vboxButtonClose;
-
-    @FXML
-    private Button closeButton;
-
-    @FXML
-    private ImageView closebutton;
+    private Button b5;
 
     public void initialize(URL location, ResourceBundle resources) {
     setRotate(c1,true,180,10);
@@ -103,20 +98,15 @@ public class ControllerMainScene implements Initializable {
 
         if(stage.isMaximized()) {
             new FadeInLeftBig(rootPane).play();
-            new Jello(vboxButtonClose).play();
-            new FadeInUp(vboxButtons).play();
-            new FadeInLeft(vboxTitleGra).play();
-            new Jello(hboxAnimat).play();
+            button();
             stage.setMaximized(false);
         }
         else {
 
             stage.setMaximized(true);
             new FadeInLeftBig(rootPane).play();
-            new Jello(vboxButtonClose).play();
-            new BounceInRight(vboxButtons).play();
-            new FadeInLeft(vboxTitleGra).play();
-            new Bounce(hboxAnimat).play();
+            button2();
+
         }
     }
     @FXML
@@ -124,11 +114,19 @@ public class ControllerMainScene implements Initializable {
         VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("BackScene.fxml"));
         rootPane.getChildren().setAll(vbox);
         new  FadeInLeft(rootPane).play();
-        new Jello(vboxButtonClose).play();
-        new FadeInUpBig(vboxButtons).play();
-        new FadeInLeft(vboxTitleGra).play();
-        new Jello(hboxAnimat).play();
+        button();
     }
+
+    public void button() {
+        new Jello(b1).play();
+        new FadeInUp(b2).play();
+        new Pulse(b3).play();
+        new RollIn(b4).play();
+        new Flash(b5).play();
+        new FadeInLeft(vboxTitleGra).play();
+        new Jello(animat).play();
+    }
+
     @FXML
     void MIN(javafx.scene.input.MouseEvent event) {
         Stage stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -159,12 +157,26 @@ public class ControllerMainScene implements Initializable {
         VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("CarsListScene.fxml"));
         rootPane.getChildren().setAll(vbox);
         new FadeIn(vbox).play();
+        button2();
 
     }
+
+    public void button2() {
+        new Jello(b1).play();
+        new BounceInRight(b2).play();
+        new Flip(b3).play();
+        new Bounce(b4).play();
+        new Swing(b5).play();
+        new Wobble(animat).play();
+        new Bounce(vboxAllRights).play();
+        new FadeInLeft(vboxTitleGra).play();
+    }
+
     @FXML
     void setTermsScene(ActionEvent event) throws IOException {
         VBox vbox1  = FXMLLoader.load(getClass().getClassLoader().getResource("TermsScene.fxml"));
         rootPane.getChildren().setAll(vbox1);
+        button2();
         new FadeIn(vbox1).play();
     }
 }
