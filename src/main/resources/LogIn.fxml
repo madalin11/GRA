@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -12,14 +13,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox fx:id="Username" alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="1400.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="1400.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerLogIn">
    <children>
       <HBox alignment="CENTER" prefHeight="293.0" prefWidth="1400.0">
          <children>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" textAlignment="CENTER" wrappingWidth="258.609375">
                <font>
-                  <Font name="Times New Roman" size="96.0" />
+                  <Font name="Arial Rounded MT Bold" size="78.0" />
                </font>
             </Text>
          </children>
@@ -43,7 +43,7 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="35.0" prefWidth="500.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="Username" prefHeight="35.0" prefWidth="500.0" GridPane.rowIndex="1" />
                   <Label text="Password" textFill="WHITE" GridPane.rowIndex="2">
                      <font>
                         <Font size="15.0" />
@@ -52,7 +52,15 @@
                   <PasswordField fx:id="Password" prefHeight="35.0" prefWidth="500.0" GridPane.rowIndex="3" />
                   <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-border-color: white; -fx-border-radius: 10;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Log In">
+                        <Text fx:id="ErrorMessage" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="278.13671875">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#LogInAction" prefHeight="31.0" prefWidth="80.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-border-color: white; -fx-border-radius: 10;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Log In">
                            <font>
                               <Font size="15.0" />
                            </font>
