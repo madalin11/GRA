@@ -160,6 +160,13 @@ public class ControllerMainScene implements Initializable {
         button2();
 
     }
+    @FXML
+    void LoadLogIn(ActionEvent event) throws IOException {
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("LogIn.fxml"));
+        rootPane.getChildren().setAll(vbox);
+        new FadeIn(vbox).play();
+        button2();
+    }
 
     public void button2() {
         new Jello(b1).play();
