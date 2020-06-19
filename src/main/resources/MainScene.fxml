@@ -124,7 +124,7 @@
                               <Font name="Arial Black" size="18.0" />
                            </font>
                         </Button>
-                        <Button fx:id="b3" mnemonicParsing="false" prefHeight="60.0" prefWidth="371.0" style="-fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px 2px 2px 2px;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Log In" textAlignment="CENTER">
+                        <Button fx:id="b3" mnemonicParsing="false" onAction="#LoadLogIn" prefHeight="60.0" prefWidth="371.0" style="-fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px 2px 2px 2px;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Log In" textAlignment="CENTER">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
