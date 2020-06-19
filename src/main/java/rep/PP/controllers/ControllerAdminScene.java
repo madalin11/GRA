@@ -1,5 +1,6 @@
 package rep.PP.controllers;
 
+import animatefx.animation.FadeIn;
 import animatefx.animation.FadeInLeftBig;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,6 +18,10 @@ import java.io.IOException;
 public class ControllerAdminScene {
     @FXML
     private VBox vboxpane;
+
+    @FXML
+    private VBox vboxPaneSign;
+
     @FXML
     void CLOSE(javafx.scene.input.MouseEvent event) {
         Stage stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -66,8 +71,10 @@ public class ControllerAdminScene {
 
     }
     @FXML
-    void GoSignUp(ActionEvent event) {
-
+    void GoSignUp(ActionEvent event) throws IOException {
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("SignUpScene.fxml"));
+        vboxPaneSign.getChildren().setAll(vbox);
+        new FadeIn(vbox).play();
     }
     @FXML
     void goTeamList(ActionEvent  event) {
