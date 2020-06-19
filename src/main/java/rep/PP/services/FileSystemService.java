@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileSystemService {
-    private static final String APPLICATION_FOLDER = ".Project_FIS20-PP";
+    private static final String APPLICATION_FOLDER = ".ANA-Gherburai";
     private static final String USER_FOLDER = System.getProperty("user.home");
     public static final Path APPLICATION_HOME_PATH = Paths.get(USER_FOLDER, APPLICATION_FOLDER);
 
