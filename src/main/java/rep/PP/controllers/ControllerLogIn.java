@@ -9,6 +9,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -41,8 +42,10 @@ public class ControllerLogIn {
             try{
                 Stage stage = (Stage) ErrorMessage.getScene().getWindow();
                 Parent viewAdminPage = FXMLLoader.load(getClass().getClassLoader().getResource("AdminScene.fxml"));
-                Scene scene = new Scene(viewAdminPage, 600, 400);
+                Scene scene = new Scene(viewAdminPage);
+
                 stage.setScene(scene);
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

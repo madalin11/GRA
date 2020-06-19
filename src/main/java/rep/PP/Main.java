@@ -23,9 +23,6 @@ public class Main extends Application {
         new FadeInUp(root).play();
     }
 
-
-
-
     public static void main(String[] args) {
         launch(args);
     }
