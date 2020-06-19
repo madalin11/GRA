@@ -46,13 +46,13 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="Username" prefHeight="40.0" prefWidth="500.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="usernameField" prefHeight="40.0" prefWidth="500.0" GridPane.rowIndex="1" />
                   <Label alignment="CENTER" text="Password" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <PasswordField fx:id="Pasword" prefHeight="40.0" prefWidth="500.0" GridPane.rowIndex="3" />
+                  <PasswordField fx:id="passwordField" prefHeight="40.0" prefWidth="500.0" GridPane.rowIndex="3" />
                   <Label alignment="CENTER" text="Mail Adress" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="4">
                      <font>
                         <Font size="18.0" />
@@ -63,12 +63,12 @@
                      <children>
                         <HBox alignment="CENTER" prefHeight="94.0" prefWidth="500.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Add">
+                              <Button mnemonicParsing="false" onAction="#handleRegisterAction" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-radius: 10;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Add">
                                  <HBox.margin>
                                     <Insets left="50.0" right="50.0" />
                                  </HBox.margin>
                               </Button>
-                              <Button mnemonicParsing="false" onAction="#home" prefHeight="25.0" prefWidth="100.0" text="Cancel">
+                              <Button mnemonicParsing="false" onAction="#home" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-radius: 10;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Cancel">
                                  <HBox.margin>
                                     <Insets left="50.0" right="50.0" />
                                  </HBox.margin>
