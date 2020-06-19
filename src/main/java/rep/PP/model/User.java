@@ -4,15 +4,24 @@ public class User {
 
     private String username;
     private String password;
-    private String role;
+    private String mail;
 
     public User() {
     }
 
-    public User(String username, String password, String role) {
+    public User(String username, String password,String mail) {
         this.username = username;
         this.password = password;
-        this.role = role;
+        this.mail = mail;
+
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
     public String getUsername() {
@@ -31,14 +40,6 @@ public class User {
         this.password = password;
     }
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,14 +49,15 @@ public class User {
 
         if (!username.equals(user.username)) return false;
         if (!password.equals(user.password)) return false;
-        return role.equals(user.role);
+
+        return false ;
+
     }
 
     @Override
     public int hashCode() {
         int result = username.hashCode();
         result = 31 * result + password.hashCode();
-        result = 31 * result + role.hashCode();
         return result;
     }
 
@@ -64,7 +66,7 @@ public class User {
         return "UserDTO{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", role='" + role + '\'' +
+                ", mail='" + mail + '\'' +
                 '}';
     }
 }
