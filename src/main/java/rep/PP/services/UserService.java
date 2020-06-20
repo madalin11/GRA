@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.FileUtils;
 import rep.PP.exceptions.CouldNotWriteUsersException;
 import rep.PP.exceptions.UsernameAlreadyExistsException;
+import rep.PP.exceptions.UsernameDoesNotAlreadyExistsException;
 import rep.PP.model.User;
 
 
@@ -39,11 +40,25 @@ public class UserService {
         persistUsers();
     }
 
+    public static void verifyAccount(String username, String password) throws UsernameDoesNotAlreadyExistsException {
+        checkUserAlreadyExist(username,password);
+    }
+
     private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
         for (User user : users) {
             if (Objects.equals(username, user.getUsername()))
                 throw new UsernameAlreadyExistsException(username);
         }
+    }
+
+    private static void checkUserAlreadyExist(String username, String password) throws UsernameDoesNotAlreadyExistsException {
+        boolean t = false;
+        for (User user : users) {
+            if (Objects.equals(username, user.getUsername()) && Objects.equals(user.getPassword(),encodePassword(user.getUsername(),password)))
+                t = true;
+        }
+        if(!t)
+            throw new UsernameDoesNotAlreadyExistsException(username);
     }
 
     private static void persistUsers() {

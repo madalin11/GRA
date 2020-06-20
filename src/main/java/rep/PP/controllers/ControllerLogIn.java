@@ -10,6 +10,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import rep.PP.exceptions.UsernameDoesNotAlreadyExistsException;
+import rep.PP.services.UserService;
 
 import java.io.IOException;
 
@@ -38,6 +40,8 @@ public class ControllerLogIn {
             return;
         }
 
+
+
         if(username.equals("admin") && password.equals("admin")){
             try{
                 Stage stage = (Stage) ErrorMessage.getScene().getWindow();
@@ -48,6 +52,18 @@ public class ControllerLogIn {
 
             } catch (IOException e) {
                 e.printStackTrace();
+            }
+            return;
+        }else if(1==1) {
+            try {
+                UserService.verifyAccount(username, password);
+                Stage stage = (Stage) ErrorMessage.getScene().getWindow();
+                Parent viewAdminPage = FXMLLoader.load(getClass().getClassLoader().getResource("EmployeeScene.fxml"));
+                Scene scene = new Scene(viewAdminPage);
+
+                stage.setScene(scene);
+            } catch (UsernameDoesNotAlreadyExistsException | IOException e) {
+                ErrorMessage.setText(e.getMessage());
             }
             return;
         }
