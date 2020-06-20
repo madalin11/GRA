@@ -41,7 +41,7 @@ public class UserService {
     }
 
     public static void verifyAccount(String username, String password) throws UsernameDoesNotAlreadyExistsException {
-        checkUserAlreadyExist(username);
+        checkUserAlreadyExist(username,password);
     }
 
     private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
@@ -51,11 +51,14 @@ public class UserService {
         }
     }
 
-    private static void checkUserAlreadyExist(String username) throws UsernameDoesNotAlreadyExistsException {
+    private static void checkUserAlreadyExist(String username, String password) throws UsernameDoesNotAlreadyExistsException {
+        boolean t = false;
         for (User user : users) {
-            if (Objects.equals(username, user.getUsername()))
-                throw new UsernameDoesNotAlreadyExistsException(username);
+            if (Objects.equals(username, user.getUsername()) && Objects.equals(user.getPassword(),encodePassword(user.getUsername(),password)))
+                t = true;
         }
+        if(!t)
+            throw new UsernameDoesNotAlreadyExistsException(username);
     }
 
     private static void persistUsers() {
