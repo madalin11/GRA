@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vboxemp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1025.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerTeam">
+    <children>
+        <HBox alignment="CENTER" prefHeight="149.0" prefWidth="1025.0">
+            <children>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Employees">
+                    <font>
+                        <Font name="Product Sans" size="56.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="153.25599670410156">
+                    <font>
+                        <Font name="Product Sans" size="24.0" />
+                    </font>
+                </Text>
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname" textAlignment="CENTER" wrappingWidth="182.49600219726562">
+                    <font>
+                        <Font name="Product Sans" size="24.0" />
+                    </font>
+                </Text>
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="CNP" textAlignment="CENTER" wrappingWidth="229.73600006103516">
+                    <font>
+                        <Font name="Product Sans" size="24.0" />
+                    </font>
+                </Text>
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" textAlignment="CENTER" wrappingWidth="71.0719985961914">
+                    <font>
+                        <Font name="Product Sans" size="24.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="614.0" prefWidth="1025.0">
+            <children>
+                <ListView fx:id="listView" prefHeight="614.0" prefWidth="675.0" stylesheets="@styleListview.css">
+                    <styleClass>
+                        <String fx:value="list-cell" />
+                        <String fx:value="negative" />
+                    </styleClass>
+                </ListView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#addEmployee" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 10;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Add" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#backAdminScene" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 10;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Close" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                    </HBox.margin>
+                </Button>
+            </children></HBox>
+    </children>
+</VBox>
