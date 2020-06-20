@@ -67,8 +67,10 @@ public class ControllerAdminScene {
     }
 
     @FXML
-    void goSalesScene(ActionEvent  event) {
-
+    void goSalesScene(ActionEvent  event) throws IOException {
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("HistoryScene.fxml"));
+        vboxPaneSign.getChildren().setAll(vbox);
+        new FadeIn(vbox).play();
 
     }
     @FXML
