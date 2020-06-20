@@ -46,7 +46,7 @@ public class CarService {
             Iterator<JSONObject> it = jsonArray.iterator();
             while (it.hasNext()) {
                 JSONObject obj = it.next();
-                Car car = new Car(obj.get("name").toString(),obj.get("pret").toString(),obj.get("interior").toString(), obj.get("jante").toString(),obj.get("jante").toString());
+                Car car = new Car(obj.get("name").toString(),obj.get("pret").toString(),obj.get("interior").toString(), obj.get("culoare").toString(),obj.get("jante").toString());
                 cars.add(car);
 
             }
