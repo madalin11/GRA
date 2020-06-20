@@ -19,7 +19,7 @@
             </Text>
          </children>
       </HBox>
-      <HBox alignment="CENTER_RIGHT" prefHeight="194.0" prefWidth="1400.0">
+      <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="1400.0">
          <children>
             <Button mnemonicParsing="false" onAction="#goConfigScene" prefHeight="21.0" prefWidth="180.0" style="-fx-border-color: white; -fx-border-radius: 10;" styleClass="bevel-grey" stylesheets="@buttonstyle.css" text="Config">
                <HBox.margin>
@@ -31,7 +31,36 @@
             </Button>
          </children>
       </HBox>
-      <HBox fx:id="hboxPane" alignment="CENTER" prefHeight="834.0" prefWidth="1400.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="1400.0">
+         <children>
+            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="RIGHT" wrappingWidth="384.5400390625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" textAlignment="CENTER" wrappingWidth="117.42578125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" textAlignment="CENTER" wrappingWidth="101.85546875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Wheels" textAlignment="CENTER" wrappingWidth="110.8232421875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Interior" textAlignment="CENTER" wrappingWidth="112.9111328125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxPane" alignment="CENTER" prefHeight="598.0" prefWidth="1400.0">
          <children>
             <ListView fx:id="carListview" prefHeight="746.0" prefWidth="800.0" styleClass="list-cell" stylesheets="@styleListview.css" />
          </children>
