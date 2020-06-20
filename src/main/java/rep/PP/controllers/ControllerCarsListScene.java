@@ -63,7 +63,7 @@ public class ControllerCarsListScene implements Initializable {
 
             JSONObject obj=(JSONObject) rooms.get(i);
 
-            carListview.getItems().add("         " + obj.get("name").toString() );
+            carListview.getItems().add("    " + obj.get("name").toString()+"               " + obj.get("pret").toString()+"              " + obj.get("culoare").toString()+ "             " + obj.get("jante").toString()+"            " + obj.get("interior").toString());
         }
         //listView.getItems().addAll(rooms);
         carListview.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
