@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vboxpane" alignment="TOP_CENTER" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerAdminScene">
+<VBox fx:id="vboxpane" alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="1400.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerAdminScene">
    <children>
       <HBox alignment="CENTER_RIGHT" onMouseDragged="#dragged1" onMousePressed="#pressed1" prefHeight="9.0" prefWidth="1200.0" style="-fx-background-color: #363737;">
          <children>
