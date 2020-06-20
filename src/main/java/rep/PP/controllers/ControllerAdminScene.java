@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import rep.PP.services.EmployeeService;
 
 import java.io.IOException;
 
@@ -77,8 +78,11 @@ public class ControllerAdminScene {
         new FadeIn(vbox).play();
     }
     @FXML
-    void goTeamList(ActionEvent  event) {
-
+    void goTeamList(ActionEvent  event) throws IOException {
+        EmployeeService.loadEmployeesFromFile();
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("TeamScene.fxml"));
+        vboxPaneSign.getChildren().setAll(vbox);
+        new FadeIn(vbox).play();
     }
 
     @FXML
