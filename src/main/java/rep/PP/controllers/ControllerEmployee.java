@@ -1,5 +1,6 @@
 package rep.PP.controllers;
 
+import animatefx.animation.FadeIn;
 import animatefx.animation.FadeInLeft;
 import animatefx.animation.FadeInLeftBig;
 import javafx.event.ActionEvent;
@@ -34,7 +35,9 @@ public class ControllerEmployee {
     }
     @FXML
     void viewHistoric(ActionEvent event) throws IOException {
-
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("HistoryScene.fxml"));
+        vboxPane.getChildren().setAll(vbox);
+        new FadeIn(vbox).play();
 
     }
     @FXML
