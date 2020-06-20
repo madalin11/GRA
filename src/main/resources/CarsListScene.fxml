@@ -33,7 +33,7 @@
       </HBox>
       <HBox fx:id="hboxPane" alignment="CENTER" prefHeight="834.0" prefWidth="1400.0">
          <children>
-            <ListView fx:id="carListview" prefHeight="746.0" prefWidth="800.0" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="carListview" prefHeight="746.0" prefWidth="800.0" style="-fx-background-color: #363737;" styleClass="list-cell" stylesheets="@styleListview.css" />
          </children>
       </HBox>
    </children>
