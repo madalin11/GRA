@@ -41,7 +41,7 @@ public class ControllerCarsListScene implements Initializable {
         Object p;
         JSONParser parser = new JSONParser();
         try {
-            FileReader readFile = new FileReader("src/main/java/rep/PP/data/employees.json");
+            FileReader readFile = new FileReader("src/main/java/rep/PP/data/carList.json");
             BufferedReader read = new BufferedReader(readFile);
             p = parser.parse(read);
             if (p instanceof JSONArray) {
