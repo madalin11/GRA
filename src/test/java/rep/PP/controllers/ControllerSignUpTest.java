@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 
 public class ControllerSignUpTest extends ApplicationTest {
 
-    @Test
+   /* @Test
     public void initialize() {
     }
 
@@ -65,5 +65,5 @@ public class ControllerSignUpTest extends ApplicationTest {
         controller.handleRegisterAction();
         controller.handleRegisterAction();
         assertEquals("Username used !" , controller.registrationMessage.getText());
-    }
+    }*/
 }
