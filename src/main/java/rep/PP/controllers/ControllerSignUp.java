@@ -16,18 +16,18 @@ import java.io.IOException;
 public class ControllerSignUp {
 
     @FXML
-    private VBox vboxPane;
+    public VBox vboxPane;
     @FXML
-    private TextField usernameField;
+     public TextField usernameField;
 
     @FXML
-    private PasswordField passwordField;
+     public PasswordField passwordField;
 
     @FXML
-    private TextField mail;
+     public TextField mail;
 
     @FXML
-    private Text registrationMessage;
+    public Text registrationMessage;
 
     public void initialize(){
 
@@ -40,7 +40,7 @@ public class ControllerSignUp {
 
     }
     @FXML
-    void handleRegisterAction(ActionEvent event) {
+    void handleRegisterAction() {
         try {
             UserService.addUser(usernameField.getText(), passwordField.getText(), mail.getText());
             registrationMessage.setText("Account created successfully!");
