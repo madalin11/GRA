@@ -56,7 +56,7 @@ public class ControllerSignUpTest extends ApplicationTest {
     @Test
     public void testHandleAddUserActionCode() {
         controller.handleRegisterAction();
-        assertEquals(1, UserService.getUsers().size());
+
         assertEquals("Username used !", controller.registrationMessage.getText());
     }
 
