@@ -8,20 +8,20 @@
 
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1025.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerHistory">
-    <children>
-        <HBox alignment="CENTER" prefHeight="149.0" prefWidth="1025.0">
-            <children>
-                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Historic">
-                    <font>
-                        <Font name="Product Sans" size="94.0" />
-                    </font>
-                </Text>
-            </children>
-        </HBox>
-        <HBox alignment="CENTER" prefHeight="718.0" prefWidth="1025.0">
-            <children>
-                <ListView fx:id="listview" prefHeight="718.0" prefWidth="731.0" styleClass="list-cell" stylesheets="@styleListview.css" />
-            </children>
-        </HBox>
-    </children>
+   <children>
+      <HBox alignment="CENTER" prefHeight="149.0" prefWidth="1025.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Historic">
+               <font>
+                  <Font name="Product Sans" size="94.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="718.0" prefWidth="1025.0">
+         <children>
+            <ListView fx:id="listview" prefHeight="718.0" prefWidth="731.0" styleClass="list-cell" stylesheets="@styleListview.css" />
+         </children>
+      </HBox>
+   </children>
 </VBox>
