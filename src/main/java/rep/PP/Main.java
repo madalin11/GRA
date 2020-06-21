@@ -8,10 +8,17 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
+import org.apache.commons.io.FileUtils;
 import rep.PP.services.UserService;
 
-public class Main extends Application {
+import java.io.File;
+import java.io.IOException;
 
+public class Main extends Application {
+    private static void copyFile(File src, File dest) throws IOException {
+        FileUtils.copyFileToDirectory(src, dest);
+    }
     @Override
     public void start(Stage primaryStage) throws Exception {
         UserService.loadUsersFromFile();
@@ -26,6 +33,22 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        File from_carList = new File("src/main/java/rep/PP/data/carList.json").getAbsoluteFile();
+        File from_employees = new File("src/main/java/rep/PP/data/employees.json").getAbsoluteFile();
+        File from_order = new File("src/main/java/rep/PP/data/order.json").getAbsoluteFile();
+
+
+        File to = new File("target/src/main/java/rep/PP/data");
+
+        try{
+            copyFile(from_carList, to);
+            copyFile(from_employees, to);
+            copyFile(from_order, to);
+
+        }
+        catch(IOException ex) {
+            ex.printStackTrace();
+        }
         launch(args);
     }
 }
