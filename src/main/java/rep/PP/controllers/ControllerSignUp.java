@@ -34,7 +34,7 @@ public class ControllerSignUp {
     }
     @FXML
     void home(ActionEvent event) throws IOException {
-        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("AdminSceneBack.fxml"));
+        VBox vbox= FXMLLoader.load(getClass().getClassLoader().getResource("AdminSceneback.fxml"));
         vboxPane.getChildren().setAll(vbox);
         new FadeIn(vbox).play();
 
