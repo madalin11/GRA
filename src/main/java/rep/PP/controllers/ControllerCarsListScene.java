@@ -30,6 +30,18 @@ public class ControllerCarsListScene implements Initializable {
 
     @FXML
     private ListView<String> carListview;
+    @FXML
+    private ListView<String> carListView1;
+
+    @FXML
+    private ListView<String> carListView2;
+
+    @FXML
+    private ListView<String> CarListView3;
+
+    @FXML
+    private ListView<String> carListView4;
+
 
     @FXML
     private HBox hboxPane;
@@ -63,7 +75,13 @@ public class ControllerCarsListScene implements Initializable {
 
             JSONObject obj=(JSONObject) rooms.get(i);
 
-            carListview.getItems().add("    " + obj.get("name").toString()+"               " + obj.get("pret").toString()+"              " + obj.get("culoare").toString()+ "             " + obj.get("jante").toString()+"            " + obj.get("interior").toString());
+            carListview.getItems().add("    " + obj.get("name").toString());
+            carListView1.getItems().add("    "+ obj.get("pret").toString());
+            carListView2.getItems().add("    "+ obj.get("culoare").toString());
+            CarListView3.getItems().add("    "+ obj.get("jante").toString());
+            carListView4.getItems().add("    "+ obj.get("interior").toString());
+
+
         }
         //listView.getItems().addAll(rooms);
         carListview.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);

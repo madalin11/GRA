@@ -30,6 +30,16 @@ public class ControllerTeam implements Initializable {
 
     @FXML
     private ListView<String> listView;
+    @FXML
+    private ListView<String> listView1;
+
+    @FXML
+    private ListView<String> listView2;
+
+    @FXML
+    private ListView<String> listView3;
+
+
     private JSONArray rooms = new JSONArray();
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -51,7 +61,14 @@ public class ControllerTeam implements Initializable {
 
             JSONObject obj=(JSONObject) rooms.get(i);
 
-            listView.getItems().add("         " + obj.get("name").toString() + "                  "+obj.get("firstname").toString()+ "                  " + obj.get("CNP").toString() + "             " + obj.get("role").toString() );
+            listView.getItems().add("         " + obj.get("name").toString() );
+            listView1.getItems().add("        "+obj.get("firstname").toString());
+            listView2.getItems().add("        "+obj.get("CNP").toString());
+            listView3.getItems().add("        "+obj.get("role").toString());
+
+
+
+
         }
         //listView.getItems().addAll(rooms);
         listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox fx:id="vbox" alignment="TOP_CENTER" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerEmployee">
+<VBox fx:id="vbox" alignment="TOP_CENTER" styleClass="emp" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerEmployee">
     <children>
         <HBox fx:id="hbox" alignment="CENTER_RIGHT" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="14.0" prefWidth="1300.0" style="-fx-background-color: #363737;">
             <children>
@@ -43,7 +43,7 @@
                 </Button>
             </children>
         </HBox>
-        <HBox alignment="TOP_CENTER">
+        <HBox alignment="CENTER_LEFT">
             <children>
                 <VBox prefHeight="920.0" prefWidth="231.0">
                     <children>

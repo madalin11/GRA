@@ -1,10 +1,11 @@
 .list-cell {
     -fx-padding: 10 10 10 10;
-    -fx-background-color: #202020;
+    -fx-background-color: TRANSPARENT;
     -fx-cell-size: 50;
 }
 .list-cell:selected {
-    -fx-background-color:  #363737;
+    -fx-background-color:  TRANSPARENT;
+
 }
 
 .list-cell {

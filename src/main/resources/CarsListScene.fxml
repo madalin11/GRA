@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox fx:id="carListScene" prefHeight="1000.0" prefWidth="1400.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerCarsListScene">
+<VBox fx:id="carListScene" prefHeight="1000.0" prefWidth="1400.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerCarsListScene">
    <children>
       <HBox alignment="CENTER" prefHeight="238.0" prefWidth="1400.0">
          <children>
@@ -33,36 +33,40 @@
       </HBox>
       <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="1400.0">
          <children>
-            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="RIGHT" wrappingWidth="384.5400390625">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="RIGHT" wrappingWidth="346.5400390625">
                <font>
-                  <Font size="18.0" />
+                  <Font size="20.0" />
                </font>
             </Text>
-            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" textAlignment="CENTER" wrappingWidth="117.42578125">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" textAlignment="RIGHT" wrappingWidth="170.42578125">
                <font>
-                  <Font size="18.0" />
+                  <Font size="20.0" />
                </font>
             </Text>
-            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" textAlignment="CENTER" wrappingWidth="101.85546875">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" textAlignment="RIGHT" wrappingWidth="175.85546875">
                <font>
-                  <Font size="18.0" />
+                  <Font size="20.0" />
                </font>
             </Text>
-            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Wheels" textAlignment="CENTER" wrappingWidth="110.8232421875">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Wheels" textAlignment="RIGHT" wrappingWidth="202.8232421875">
                <font>
-                  <Font size="18.0" />
+                  <Font size="20.0" />
                </font>
             </Text>
-            <Text fill="#aeaaaa" strokeType="OUTSIDE" strokeWidth="0.0" text="Interior" textAlignment="CENTER" wrappingWidth="112.9111328125">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Interior" textAlignment="CENTER" wrappingWidth="362.9111328125">
                <font>
-                  <Font size="18.0" />
+                  <Font size="20.0" />
                </font>
             </Text>
          </children>
       </HBox>
       <HBox fx:id="hboxPane" alignment="CENTER" prefHeight="598.0" prefWidth="1400.0">
          <children>
-            <ListView fx:id="carListview" prefHeight="746.0" prefWidth="800.0" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="carListview" prefHeight="598.0" prefWidth="182.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="carListView1" prefHeight="598.0" prefWidth="172.0" style="-fx-background-color: #202020; -fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="carListView2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #202020; -fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="CarListView3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #202020; -fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="carListView4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #202020; -fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
          </children>
       </HBox>
    </children>

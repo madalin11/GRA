@@ -9,3 +9,11 @@
 .back1{
     -fx-background-size:cover;
 }
+
+.image{
+    -fx-background-image: url('admin.jpg');
+}
+
+.emp{
+    -fx-background-image: url('employ.jpg');
+}

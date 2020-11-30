@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox fx:id="vboxemp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1025.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerTeam">
+<VBox fx:id="vboxemp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1025.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerTeam">
     <children>
         <HBox alignment="CENTER" prefHeight="149.0" prefWidth="1025.0">
             <children>
@@ -20,24 +20,24 @@
                 </Text>
             </children>
         </HBox>
-        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <HBox prefHeight="100.0" prefWidth="200.0">
             <children>
-                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="153.25599670410156">
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="RIGHT" wrappingWidth="210.25599670410156">
                     <font>
                         <Font name="Product Sans" size="24.0" />
                     </font>
                 </Text>
-                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname" textAlignment="CENTER" wrappingWidth="182.49600219726562">
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname" textAlignment="RIGHT" wrappingWidth="258.4960021972656">
                     <font>
                         <Font name="Product Sans" size="24.0" />
                     </font>
                 </Text>
-                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="CNP" textAlignment="CENTER" wrappingWidth="229.73600006103516">
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="CNP" textAlignment="RIGHT" wrappingWidth="212.73600006103516">
                     <font>
                         <Font name="Product Sans" size="24.0" />
                     </font>
                 </Text>
-                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" textAlignment="CENTER" wrappingWidth="71.0719985961914">
+                <Text fill="#aea2a2" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" textAlignment="RIGHT" wrappingWidth="214.0719985961914">
                     <font>
                         <Font name="Product Sans" size="24.0" />
                     </font>
@@ -46,12 +46,15 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="614.0" prefWidth="1025.0">
             <children>
-                <ListView fx:id="listView" prefHeight="614.0" prefWidth="675.0" stylesheets="@styleListview.css">
+                <ListView fx:id="listView" prefHeight="590.0" prefWidth="227.0" style="-fx-border-color: white;" stylesheets="@styleListview.css">
                     <styleClass>
                         <String fx:value="list-cell" />
                         <String fx:value="negative" />
                     </styleClass>
                 </ListView>
+            <ListView fx:id="listView1" prefHeight="590.0" prefWidth="250.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="listView2" prefHeight="590.0" prefWidth="248.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="listView3" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">

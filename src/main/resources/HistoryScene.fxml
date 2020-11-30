@@ -6,8 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1025.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerHistory">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1025.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rep.PP.controllers.ControllerHistory">
    <children>
       <HBox alignment="CENTER" prefHeight="149.0" prefWidth="1025.0">
          <children>
@@ -18,9 +17,42 @@
             </Text>
          </children>
       </HBox>
+      <HBox prefHeight="46.0" prefWidth="1025.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="RIGHT" wrappingWidth="152.822265625">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Jante" textAlignment="RIGHT" wrappingWidth="149.869140625">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" textAlignment="RIGHT" wrappingWidth="165.6171875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Interior" textAlignment="RIGHT" wrappingWidth="248.345703125">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Feedback" textAlignment="RIGHT" wrappingWidth="236.57421875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
       <HBox alignment="CENTER" prefHeight="718.0" prefWidth="1025.0">
          <children>
-            <ListView fx:id="listview" prefHeight="718.0" prefWidth="731.0" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="listview" prefHeight="680.0" prefWidth="179.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="listView1" prefHeight="680.0" prefWidth="143.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="listView2" prefHeight="703.0" prefWidth="199.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="listView3" prefHeight="703.0" prefWidth="269.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
+            <ListView fx:id="listView4" prefHeight="680.0" prefWidth="186.0" style="-fx-border-color: white;" styleClass="list-cell" stylesheets="@styleListview.css" />
          </children>
       </HBox>
    </children>

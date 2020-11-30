@@ -19,6 +19,17 @@ public class ControllerHistory implements Initializable {
 
     @FXML
     private ListView<String> listview;
+    @FXML
+    private ListView<String> listView1;
+
+    @FXML
+    private ListView<String> listView2;
+
+    @FXML
+    private ListView<String> listView3;
+
+    @FXML
+    private ListView<String> listView4;
 
     private JSONArray rooms = new JSONArray();
     public void initialize(URL location, ResourceBundle resources) {
@@ -41,7 +52,14 @@ public class ControllerHistory implements Initializable {
 
             JSONObject obj=(JSONObject) rooms.get(i);
 
-            listview.getItems().add("         " + obj.get("name").toString() + "                  "+obj.get("culoare").toString()+ "                  " + obj.get("interior").toString() + "             " + obj.get("jante").toString() + "             " + obj.get("feedback").toString());
+            listview.getItems().add("         " + obj.get("name").toString());
+            listView1.getItems().add("   "+ obj.get("culoare").toString());
+            listView2.getItems().add("   "+ obj.get("interior").toString());
+            listView3.getItems().add("        "+ obj.get("jante").toString());
+            listView4.getItems().add("        "+ obj.get("feedback").toString());
+
+
+
         }
         //listView.getItems().addAll(rooms);
         listview.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
